@@ -104,10 +104,10 @@ bot = 1
 run = True
 botIDs = ['*', '**']
 if bot == 1:
-    messageManager = Messages(session, '60550508')
+    messageManager = Messages(session, 'group-id')
     botID = botIDs[0]
 else:
-    messageManager = Messages(session, '59433460')
+    messageManager = Messages(session, 'group-id')
     botID = botIDs[1]
 
 while run:
