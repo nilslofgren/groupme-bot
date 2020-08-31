@@ -204,22 +204,22 @@ class Portfolio:
         self.totalValue = value
 
 
-token = "dc68b2d06ca50138d774127c6b6f91ba"
+token = "*"
 
 client = Client.from_token(token)
 session = client.session
 bots = Bots(session)
 headers = {
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com",
-    'x-rapidapi-key': "9d9995763fmsha7e1c3480b39eb4p1aa3dajsn05a7c3170e58"
+    'x-rapidapi-key': "*"
 }
 
 # bot 0 = test
 # bot 1 = real
 bot = 0
 run = True
-botIDs = ['0fe8a6ce7269fcb58fc8be902a', '729b1b67487ce276aacb8d693d']
-groupIDs = ['60550508', '59433460']
+botIDs = ['*', '*']
+groupIDs = ['*', '*']
 index = 0
 indexDict = {}
 
@@ -244,35 +244,3 @@ while run:
     else:
         check_mention()
     time.sleep(3)
-# get_trending()
-# get_summary()
-
-# print(messageText)
-#
-# for message in messageText:
-#     if message.find('@Test') == 0:
-#         Bots.post(bots, '0fe8a6ce7269fcb58fc8be902a', 'You mentioned Me!', attachments=None)
-
-# line#s.append(line.split(" "))
-# f = open("dream1line", "r")
-# lines = []
-# for line in f:
-# line.strip()
-# new_line = " ".join(line.splitlines())
-#    lines += line.split(" ")
-
-# for word in lines:
-#    print(word)
-#    chats.messages.DirectMessages(session, '28967374').create(word)
-
-# Code to return top liked messages for the month
-# group = '59433460'
-# weekly_best = Leaderboard(session, group).list_day()
-# print(weekly_best)
-# for chat in client.chats.list_all():
-#    print(chat.other_user['name'], " : ", chat.other_user['id'])
-
-# groups = list(client.groups.list_all())
-
-# for group in groups:
-#    print(group.name, " : ", group.id)
