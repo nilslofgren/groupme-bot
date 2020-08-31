@@ -119,7 +119,7 @@ def get_chart(ticker, interval, over_time):
     plt.ylabel('Price in USD')
     t = str(time.time())
     plt.savefig(t + 'chart.png')
-    path = 'C:\\Users\\I518128\\PycharmProjects\\Bootcamp\\' + t + 'chart.png'
+    path = 'C:\\file-path-here' + t + 'chart.png'
     imgPath = open(path, 'rb').read()
     payload = {"X-Access-Token": token, "Content-Type": "image/png"}
     r = requests.post(url='https://image.groupme.com/pictures', data=imgPath, headers=payload)
