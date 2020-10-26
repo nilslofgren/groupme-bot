@@ -35,7 +35,7 @@ def determine_target(message):
                                'and range can be 1d|5d|1mo|3mo|6mo|1y|2y|5y|10y|ytd|max')
     else:
         Bots.post(bots, botID, 'I dont recognize your command')
-        Bots.post(bots, botID, 'Always start your command with @Stonks so I know you are talking to me.')
+        Bots.post(bots, botID, 'Use "@Stonks help" for a list of my commands.')
 
 
 def get_trending():
