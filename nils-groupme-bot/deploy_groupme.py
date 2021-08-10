@@ -135,7 +135,7 @@ def get_chart(ticker, interval, over_time):
     plt.ylabel('Price in USD')
     t = str(time.time())
     plt.savefig(t + 'chart.png')
-    path = 'C:\\Users\\I518128\\nils-groupme-bot\\' + t + 'chart.png'
+    path = '*' + t + 'chart.png'
     imgPath = open(path, 'rb').read()
     payload = {"X-Access-Token": token, "Content-Type": "image/png"}
     r = requests.post(url='https://image.groupme.com/pictures', data=imgPath, headers=payload)
@@ -239,22 +239,22 @@ class Portfolio:
 
 def init():
     global token, client, session, bots, headers, botID, botIDs, groupIDs, messageManager, index, indexDict, members, memList
-    token = "dc68b2d06ca50138d774127c6b6f91ba"
+    token = "*"
 
     client = Client.from_token(token)
     session = client.session
     bots = Bots(session)
     headers = {
         'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com",
-        'x-rapidapi-key': "9d9995763fmsha7e1c3480b39eb4p1aa3dajsn05a7c3170e58"
+        'x-rapidapi-key': "*"
     }
 
     # bot 0 = test
     # bot 1 = real
     bot = 0
     run = True
-    botIDs = ['0fe8a6ce7269fcb58fc8be902a', '729b1b67487ce276aacb8d693d']
-    groupIDs = ['60550508', '59433460']
+    botIDs = ['*', '*']
+    groupIDs = ['*', '*']
     index = 0
     indexDict = {}
     botID = botIDs[bot]
